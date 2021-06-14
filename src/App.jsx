@@ -28,9 +28,6 @@ function App() {
               </div>
             </Section>
           </div>
-          <div className="col-span-1 bg-blue-100 px-8">
-            Another
-          </div>
         </div>
       </div>
     </main>
