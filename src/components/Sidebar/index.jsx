@@ -1,21 +1,23 @@
 import React from 'react'
+import { FiSettings } from 'react-icons/fi';
 
-const Sidebar = ({user}) => {
+const Sidebar = ({ user, socials }) => {
+    const { name, profilePicture } = user;
     return (
         <aside className="bg-black h-screen text-white grid justify-center py-12">
-            <div className="logo self-start justify-center">
-                <img  className="rounded-full mx-auto" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=40&h=40&q=80"/>
-                <span className="my-1 text-lg font-bold">{user}</span>
+            <div className="logo self-start text-center justify-self-center">
+                <img className="rounded-full w-12 h-12 mx-auto border-2 border-blue-200" src={profilePicture} />
+                <span className="my-2 inline-block text-md">{name}</span>
             </div>
             <nav className="">
                 <ul className="grid justify-between h-full">
-                    <li>Icon 1</li>
-                    <li>Icon 1</li>
-                    <li>Icon 1</li>
+                    {
+                        socials.map(({ platform, link }, idx) => <li key={idx}><a className="" href={link} title={platform}>{platform}</a></li>)
+                    }
                 </ul>
             </nav>
-            <div className="setting self-end">
-                Settings
+            <div className="setting self-end items-center justify-self-center">
+                <FiSettings className="w-8 h-8" />
             </div>
         </aside>
     ) 

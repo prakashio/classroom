@@ -1,18 +1,44 @@
 {
-    "name": "Tarun",
-    "classes": [{
-        "name": "Finance",
-        "teacher": "Dr. Charu",
-        "meetLink": "https://meet.google.com/sjv-umyf-wie"
+    "user": {
+        "name": "Tarun",
+        "profilePicture": "https://pbs.twimg.com/profile_images/1191190878536126467/VbOC4B83_400x400.jpg"
     },
-    {
-        "name": "Business analytics",
-        "teacher": "Dr. Charu",
-        "meetLink": "https://meet.google.com/wxt-rdck-pyt"
-    },
-    {
-        "name": "All classes",
-        "teacher": "Dr. Charu",
-        "meetLink": "https://meet.google.com/lookup/fjieopky"
-    }]
+    "classes": [
+        {
+            "name": "Finance",
+            "teacher": "Dr. Charu",
+            "type": "finance",
+            "meetLink": "https://meet.google.com/sjv-umyf-wie"
+        },
+        {
+            "name": "Business analytics",
+            "type": "business",
+            "teacher": "Dr. Charu",
+            "meetLink": "https://meet.google.com/wxt-rdck-pyt"
+        },
+        {
+            "name": "All classes",
+            "type": "all",
+            "teacher": "Dr. Charu",
+            "meetLink": "https://meet.google.com/lookup/fjieopkyez"
+        }
+    ],
+    "socials": [
+        {
+            "platform": "Gmail",
+            "link": "https://mail.google.com/mail/u/0/"
+        },
+        {
+            "platform": "Outlook",
+            "link": "https://mail.google.com/mail/u/0/"
+        },
+        {
+            "platform": "Classroom",
+            "link": "https://mail.google.com/mail/u/0/"
+        },
+        {
+            "platform": "Linkedin",
+            "link": "https://mail.google.com/mail/u/0/"
+        }
+    ]
 }

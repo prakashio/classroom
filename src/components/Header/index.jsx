@@ -2,10 +2,8 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <header className="w-full py-8 flex justify-between">
+        <header className="w-full h-1/6 flex items-center px-8">
             <h3 className="text-xl">Welcome, <b>Today</b></h3>
-            <div className="avatar flex items-center">
-            </div>
         </header>
     )
 }
